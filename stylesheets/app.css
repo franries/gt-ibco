@@ -2725,7 +2725,7 @@ div.orbit-wrapper span.rotator {
   position: absolute;
   top: 0;
   left: -20px;
-  background: url('/images/foundation/orbit/rotator-black.png?1359398750') no-repeat;
+  background: url('/images/foundation/orbit/rotator-black.png?1359399162') no-repeat;
   z-index: 3;
 }
 /* line 27, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
@@ -2747,7 +2747,7 @@ div.orbit-wrapper span.mask {
 div.orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
-  background: url('/images/foundation/orbit/timer-black.png?1359398750') repeat 0 0;
+  background: url('/images/foundation/orbit/timer-black.png?1359399162') repeat 0 0;
 }
 /* line 32, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause {
@@ -2757,13 +2757,13 @@ div.orbit-wrapper span.pause {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('/images/foundation/orbit/pause-black.png?1359398750') no-repeat;
+  background: url('/images/foundation/orbit/pause-black.png?1359399162') no-repeat;
   z-index: 4;
   opacity: 0;
 }
 /* line 33, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause.active {
-  background: url('/images/foundation/orbit/pause-black.png?1359398750') no-repeat 0 -40px;
+  background: url('/images/foundation/orbit/pause-black.png?1359399162') no-repeat 0 -40px;
 }
 /* line 35, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.timer:hover span.pause, div.orbit-wrapper span.pause.active {
@@ -2810,24 +2810,24 @@ div.orbit-wrapper div.slider-nav span {
 }
 /* line 48, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/images/foundation/orbit/right-arrow.png?1359398750');
+  background: url('/images/foundation/orbit/right-arrow.png?1359399162');
   background-size: 100%;
   right: 0;
 }
 /* line 49, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/images/foundation/orbit/left-arrow.png?1359398750');
+  background: url('/images/foundation/orbit/left-arrow.png?1359399162');
   background-size: 100%;
   left: 0;
 }
 
 /* line 54, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/images/foundation/orbit/right-arrow-small.png?1359398750');
+  background: url('/images/foundation/orbit/right-arrow-small.png?1359399162');
 }
 /* line 55, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/images/foundation/orbit/left-arrow-small.png?1359398750');
+  background: url('/images/foundation/orbit/left-arrow-small.png?1359399162');
 }
 
 /* Bullet Nav ---------------------- */
@@ -2848,7 +2848,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999999;
   text-indent: -9999px;
-  background: url('/images/foundation/orbit/bullets.jpg?1359398750') no-repeat 4px 0;
+  background: url('/images/foundation/orbit/bullets.jpg?1359399162') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -5884,5 +5884,268 @@ table.hide-for-medium {
   /* line 456, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
   .top-bar ul > li.has-button a.button {
     margin: 0;
+  }
+}
+/* CSS for jQuery Orbit Plugin 1.4.0
+ * Maintained for Foundation. foundation.zurb.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+*/
+/* Container ---------------------- */
+/* line 9, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit-wrapper {
+  width: 1px;
+  height: 1px;
+  position: relative;
+}
+
+/* line 11, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit {
+  width: 1px;
+  height: 1px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 17px;
+}
+/* line 13, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit.with-bullets {
+  margin-bottom: 40px;
+}
+/* line 15, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit .orbit-slide {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 16, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit a.orbit-slide {
+  border: none;
+  line-height: 0;
+  display: none;
+}
+/* line 17, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit div.orbit-slide {
+  width: 100%;
+  height: 100%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
+/* Timer ---------------------- */
+/* line 25, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper div.timer {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: .6;
+  cursor: pointer;
+  z-index: 31;
+}
+/* line 26, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper span.rotator {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background: url('/images/foundation/orbit/rotator-black.png?1359399162') no-repeat;
+  z-index: 3;
+}
+/* line 27, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper span.rotator.move {
+  left: 0;
+}
+/* line 29, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper span.mask {
+  display: block;
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+/* line 30, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper span.mask.move {
+  width: 40px;
+  left: 0;
+  background: url('/images/foundation/orbit/timer-black.png?1359399162') repeat 0 0;
+}
+/* line 32, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper span.pause {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('/images/foundation/orbit/pause-black.png?1359399162') no-repeat;
+  z-index: 4;
+  opacity: 0;
+}
+/* line 33, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper span.pause.active {
+  background: url('/images/foundation/orbit/pause-black.png?1359399162') no-repeat 0 -40px;
+}
+/* line 35, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper div.timer:hover span.pause, div.orbit-wrapper span.pause.active {
+  opacity: 1;
+}
+
+/* Captions ---------------------- */
+/* line 40, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit-caption {
+  display: none;
+  font-family: inherit;
+}
+
+/* line 41, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit-wrapper .orbit-caption {
+  background: black;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 30;
+  color: white;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 13px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Directional Nav ---------------------- */
+/* line 46, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper div.slider-nav {
+  display: block;
+}
+/* line 47, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper div.slider-nav span {
+  width: 39px;
+  height: 50px;
+  text-indent: -9999px;
+  position: absolute;
+  z-index: 30;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+}
+/* line 48, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper div.slider-nav span.right {
+  background: url('/images/foundation/orbit/right-arrow.png?1359399162');
+  background-size: 100%;
+  right: 0;
+}
+/* line 49, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit-wrapper div.slider-nav span.left {
+  background: url('/images/foundation/orbit/left-arrow.png?1359399162');
+  background-size: 100%;
+  left: 0;
+}
+
+/* line 54, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.lt-ie9 div.orbit-wrapper div.slider-nav span.right {
+  background: url('/images/foundation/orbit/right-arrow-small.png?1359399162');
+}
+/* line 55, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.lt-ie9 div.orbit-wrapper div.slider-nav span.left {
+  background: url('/images/foundation/orbit/left-arrow-small.png?1359399162');
+}
+
+/* Bullet Nav ---------------------- */
+/* line 61, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+ul.orbit-bullets {
+  position: absolute;
+  z-index: 30;
+  list-style: none;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -50px;
+  padding: 0;
+}
+/* line 62, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+ul.orbit-bullets li {
+  float: left;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #999999;
+  text-indent: -9999px;
+  background: url('/images/foundation/orbit/bullets.jpg?1359399162') no-repeat 4px 0;
+  width: 13px;
+  height: 12px;
+  overflow: hidden;
+}
+/* line 63, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+ul.orbit-bullets li.active {
+  color: #222222;
+  background-position: -8px 0;
+}
+/* line 64, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+ul.orbit-bullets li.has-thumb {
+  background: none;
+  width: 100px;
+  height: 75px;
+}
+/* line 65, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+ul.orbit-bullets li.active.has-thumb {
+  background-position: 0 0;
+  border-top: 2px solid black;
+}
+
+/* Orbit Slide Counter */
+/* line 70, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.orbit-slide-counter {
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+}
+
+/* Fluid Layout ---------------------- */
+/* line 74, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit img.fluid-placeholder {
+  visibility: hidden;
+  position: static;
+  display: block;
+  width: 100%;
+}
+
+/* line 75, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+div.orbit, div.orbit-wrapper {
+  width: 100% !important;
+}
+
+/* Correct timer in IE */
+/* line 78, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.lt-ie9 .timer {
+  display: none !important;
+}
+
+/* line 79, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+.lt-ie9 div.caption {
+  background: black;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+  zoom: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 83, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+  div.orbit.orbit-stack-on-small img.fluid-placeholder {
+    visibility: visible;
+  }
+
+  /* line 86, C:/Users/fran/Desktop/fire.app/lib/ruby/compass_extensions/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
+  div.orbit.orbit-stack-on-small .orbit-slide {
+    position: static;
+    margin-bottom: 10px;
   }
 }
